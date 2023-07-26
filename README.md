@@ -25,8 +25,13 @@ Setting up the development environment (Installation time is about ten minutes)
 
 ## Raw Image Data
 The raw image data are placed in `./raw_image/` directory.
-## Source Data
 
+Download the raw image google drive [fig2](https://drive.google.com/file/d/1ft7olxzalz8kQBT6cc3BjmZE4LQmtEhi/view?usp=drive_link), 
+[fig3](https://drive.google.com/file/d/10ceCUBRYDQvjrqky2BBIFH7dbpHQthgj/view?usp=drive_link),
+[fig4](https://drive.google.com/file/d/1wYSfOxSfZwVknHdlK9dM0YJp_vffIuZj/view?usp=drive_link),
+[fig5](https://drive.google.com/file/d/1nO9jJWaVPF2UXtt0iG0zm4TaqwoVz6kN/view?usp=drive_link)
+
+## Source Data
 To maximize the reproducibility of our study, we provide the raw data underlying all the figures and tables demonstrated in our paper. These raw data are saved for each figure/table in specific Excel file with multiple labeled sheets, respectively. The Excel files are deposited in the `./source_data/`directory.
 
 ## Stripes And Artifacts Correction 
