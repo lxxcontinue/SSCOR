@@ -1,6 +1,8 @@
 
 # A deep learning-based stripe self-correction method for stitched microscopic images
-You can find more details here: https://github.com/lxxcontinue/SSCOR
+
+[SSCOR Paper](https://www.biorxiv.org/content/10.1101/2023.01.11.523393v1)
+
 ## Pytorch implementation of SSCOR
 
 ## OS Requirements
@@ -8,7 +10,7 @@ You can find more details here: https://github.com/lxxcontinue/SSCOR
 - Python 3.7 + Pytorch 1.7.1
 - NVIDIA GPU + CUDA 11.0 CuDNN 8
 
-## Installation Guide:
+## Installation Guide
 Setting up the development environment (Installation time is about ten minutes)
 - To install docker:
   - Install [docker](https://docs.docker.com/install/)
@@ -42,7 +44,7 @@ Run the following command to correct the stripes and artifacts:
 python restore.py --dataroot ./raw_image/fig2 --name MPM_stripe_1 --model sscor --image_name MPM_stripe_1.tif --offset_size 100 --repeat 2
 ```
 - Run time: 93s (on a workstation with a NVIDIA RTX 3090 GPU)
-- The corrected result will be saved in: `.//raw_image/fig2/result`
+- The corrected result will be saved in: `./raw_image/fig2/result`
   
 ### Correct the synthetic stripes and out-of-focus artifacts on SRS image
 ```bash
