@@ -74,13 +74,13 @@ python sample/sample_stripe_2.py --h_n 5 --v_n 5 --in_dir ./raw_image/fig5 --img
 python sample/sample_stripe_2.py --h_n 9 --v_n 9 --in_dir ./raw_image/fig2 --img_name MPM_grid_1.tif --patch_size 128
 ```
 
-Stripe with out-of-focus (e.g. MPM_stripe_1.tif, SRS_out_of_focus.tif)
+- Stripe with out-of-focus (e.g. MPM_stripe_1.tif, SRS_out_of_focus.tif)
 ```bash
 python sample/sample_out_of_focus.py --h --h_n 11 --in_dir ./raw_image/fig2 --img_name MPM_stripe_1.tif --x_loc 4170 --y_loc 1960
 python sample/sample_out_of_focus.py --h --h_n 11 --in_dir ./raw_image/fig4 --img_name SRS_out_of_focus.tif --x_loc 2600 --y_loc 3200
 ```
 
-Stripe with bubble (e.g. SRS_bubble.tif)
+- Stripe with bubble (e.g. SRS_bubble.tif)
 ```bash
 python sample/sample_bubble.py --h --h_n 11 --in_dir ./raw_image/fig4 --img_name SRS_bubble.tif
 ```
@@ -90,7 +90,7 @@ python sample/sample_bubble.py --h --h_n 11 --in_dir ./raw_image/fig4 --img_name
 python sample/sample_sfa.py --in_dir ./raw_image/fig4 --img_name SRS_SFA.tif --x_loc 3200
 ```
 
-### Adversarial Self-training
+### Adversarial self-training
 
 - Train a model on the sampling patches:
 ```bash
@@ -98,3 +98,5 @@ python train.py --dataroot ./sample_result/sample_SRS_stripe --name SRS_stripe-t
 ```
 To see more intermediate results, check out `./checkpoints/`. The .pth file will be save in the corresponding folder.
 
+## Contact
+If you have any questions, please contact Shu Wang at [shu@fzu.edu.cn](shu@fzu.edu.cn) or Wenxi Liu at [wenxiliu@fzu.edu.cn](wenxiliu@fzu.edu.cn).
