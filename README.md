@@ -45,7 +45,9 @@ python restore.py --dataroot ./raw_image/fig2 --name MPM_stripe_1 --model sscor 
 ```
 - Run time: 93s (on a workstation with a NVIDIA RTX 3090 GPU)
 - The corrected result will be saved in: `./raw_image/fig2/result`
-  
+
+We have uploaded a trained model and placed it in the [google drive](https://drive.google.com/file/d/1O31rcGqOYQrWWlmojE0F104opuvVYLGZ/view?usp=share_link). You can save it to './checkpoints/' to restore './raw_image/fig2/MPM_stripe_1.tif'
+
 ### Correct the synthetic stripes and out-of-focus artifacts on SRS image
 ```bash
 python restore.py --dataroot ./raw_image/fig4 --name SRS_out_of_focus --model sscor --image_name SRS_out_of_focus.tif --offset_size 100 --repeat 1
